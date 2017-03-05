@@ -18,7 +18,7 @@ void APatrollingGuard::BeginPlay()
 {
 	Super::BeginPlay();
 
-	if (GunClass)
+	/*if (GunClass)
 	{
 		Gun = GetWorld()->SpawnActor<AGun>(GunClass, GetActorLocation(), GetActorRotation());
 		Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint_0"));
@@ -27,7 +27,7 @@ void APatrollingGuard::BeginPlay()
 	else
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Warning: GunClass is empty!"));
-	}
+	}*/
 	
 }
 
