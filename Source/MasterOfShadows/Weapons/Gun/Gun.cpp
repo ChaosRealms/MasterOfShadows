@@ -66,6 +66,7 @@ void AGun::OnFire()
 	// try and play the sound if specified
 	if (FireSound != NULL)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("AGun::OnFire"));
 		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
 	}
 
