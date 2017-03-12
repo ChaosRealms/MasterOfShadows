@@ -23,7 +23,11 @@ public:
 	// Called every frame
 	virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
 
+	UFUNCTION(BlueprintCallable, Category = "Patrol")
 	TArray<AActor*> GetPatrolPoints() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Patrol")
+	void SetPatrolPoints(TArray<AActor*> PatrolPointsArray);
 
 private:
 

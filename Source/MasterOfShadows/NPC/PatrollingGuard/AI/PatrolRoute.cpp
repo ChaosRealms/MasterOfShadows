@@ -38,3 +38,8 @@ TArray<AActor*> UPatrolRoute::GetPatrolPoints() const
 	return PatrolPoints;
 }
 
+void UPatrolRoute::SetPatrolPoints(TArray<AActor*> PatrolPointsArray)
+{
+	PatrolPoints = PatrolPointsArray;
+}
+
